@@ -1,14 +1,43 @@
-\documentclass{article}
-\usepackage[utf8]{inputenc}
+\documentclass[output=book,modfonts,nonflat,collection,collectionchapter
+,colorlinks, citecolor=brown
+		  ]{langsci/langscibook}                              
+\input{localmetadata.tex}
+\input{localpackages.tex}
+\input{localhyphenation.tex}
+\input{localcommands.tex} 
+\bibliography{localbibliography}
 
-\title{227}
-\author{sebastian.nordhoff }
-\date{November 2018}
+\begin{document}         
+\maketitle                
+\frontmatter
 
-\begin{document}
+\currentpdfbookmark{Contents}{name} % adds a PDF bookmark
+\tableofcontents
+% \include{chapters/preface}
+% \include{chapters/acknowledgments}
+\lsCollectionPaperFrontmatterMode % Enter the Frontmatter Mode. 
+\includepaper{chapters/prefaceEd}
+\lsCollectionPaperMainmatterMode % Leave the Frontmatter Mode 
+\setcounter{chapter}{0} % Reset the chapter counter so that preceeding prefaces are not counted
+%%
+\mainmatter          
 
-\maketitle
+\includepaper{chapters/Schwarz}
+\includepaper{chapters/Cisneros}
+\includepaper{chapters/Sereikaite}
+\includepaper{chapters/Irani}
+\includepaper{chapters/Pico}
+\includepaper{chapters/LeBruyn}
+\includepaper{chapters/Hall} 
+\includepaper{chapters/Despic}
+\includepaper{chapters/Borik-Espinal}
+\includepaper{chapters/Williams} 
+\includepaper{chapters/de-Sa}
+\includepaper{chapters/Coppock-Strand}
+\includepaper{chapters/Etxeberria}
 
-\section{Introduction}
+\sloppy
+\input{backmatter.tex}
+\input{localseealso.tex}
 
-\end{document}
+\end{document} 
