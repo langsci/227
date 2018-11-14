@@ -1,5 +1,6 @@
 \documentclass[output=book,modfonts,nonflat,collection,collectionchapter
 ,colorlinks, citecolor=brown
+% ,draft,draftmode
 		  ]{langsci/langscibook}                              
 \input{localmetadata.tex}
 \input{localpackages.tex}
@@ -22,6 +23,8 @@
 %%
 \mainmatter          
 
+\renewcommand{\checkmark}{\ding{51}}
+	
 \includepaper{chapters/Schwarz}
 \includepaper{chapters/Cisneros}
 \includepaper{chapters/Sereikaite}
@@ -35,8 +38,8 @@
 \includepaper{chapters/de-Sa}
 \includepaper{chapters/Coppock-Strand}
 \includepaper{chapters/Etxeberria}
-
-\sloppy
+% 
+% \sloppy
 \input{backmatter.tex}
 \input{localseealso.tex}
 
