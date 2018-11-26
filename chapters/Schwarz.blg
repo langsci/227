@@ -1,0 +1,5 @@
+[2] Config.pm:302> INFO - This is Biber 2.11
+[3] Config.pm:305> INFO - Logfile is 'Schwarz.blg'
+[374] biber-MSWIN64:313> INFO - === 
+[2176] Utils.pm:209> ERROR - Cannot find control file 'Schwarz.bcf'! - Did latex run successfully on your .tex file before you ran biber?
+[2177] Biber.pm:114> INFO - ERRORS: 1
