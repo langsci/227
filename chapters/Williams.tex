@@ -62,7 +62,7 @@ Before I present the diagnostic tests, it is important to caution the reader tha
 \label{tab:williams:1}
 \begin{tabularx}{\textwidth}{llll} 
  \lsptoprule
-            & +Definite marked & -Definite marked \\ 
+            & +Definite marked & \textminus Definite marked \\ 
  \midrule
  Weak interpretation  &   \textsc{weak definite}\footnote{Relevant lexical items: e.g.  \textit{the store, the bank, the hospital} (potentially ambiguous between weak and strong definite interpretations).} &     \textsc{bare institutional singular}\footnote{Relevant lexical items: e.g. \textit{school, church, prison, jail} (unambiguously weak).}      \\
  Strong interpretation  &   \textsc{strong definite}\footnote{Relevant lexical items: e.g. \textit{the castle, the stadium, the restaurant} (unambiguously strong).}  &  *\footnote{I assume this cell is empty due to the \is{Blocking Principle}Blocking Principle discussed in \citet[360]{Chierchia1998}, and \citet{DealNee2016}. The Blocking Principle states that \isi{bare nominals} cannot be interpreted as definite, because there is a lexically specified \is{type shifting}type shifter present in the language that performs this function.}   \\
@@ -242,7 +242,7 @@ Thus, lexical items from each of the three classes can receive a referring inter
 \begin{table}[h]\is{incorporation}\is{bare nominals}
 \caption{Three lexical classes of roots}
 \label{tab:williams:3}
-\begin{tabularx}{\textwidth}{lccc} 
+\begin{tabularx}{\textwidth}{Qccc} 
  \lsptoprule
  & \textsc{strong only} & \textsc{strong-weak ambig.}  & \textsc{bis}\\ 
  \midrule
@@ -311,7 +311,7 @@ Following this cross-linguistic literature on number, I assume this I assume tha
 			\ex{Strong definite \label{ex:williams:35}\\
 				\begin{tikzpicture}[baseline={([yshift=-2ex]current bounding box.north)}, scale=.65][sibling distance=0pt]
 				\tikzset{every tree node/.style={align=center,anchor=north}}
-				\Tree [.DP [.D\textsc{[+spec]}\\\textit{the} ] [.\textbf{{Num}P} [.\textbf{{Num}}\\{[\textsc{-PL}]} ] [.nP [.n ] [.root\\{\textit{castle}, \textit{store}, \textit{school}} ] ] ] ] 
+				\Tree [.DP [.D\textsc{[+spec]}\\\textit{the} ] [.\textbf{{Num}P} [.\textbf{{Num}}\\{[\textsc{\textminus PL}]} ] [.nP [.n ] [.root\\{\textit{castle}, \textit{store}, \textit{school}} ] ] ] ] 
 				\end{tikzpicture}
 			}
 		\end{exe}
@@ -321,7 +321,7 @@ Following this cross-linguistic literature on number, I assume this I assume tha
 			\ex{Weak definite\label{ex:williams:36}\\
 				\begin{tikzpicture}[baseline={([yshift=-2ex]current bounding box.north)}, scale=.65][sibling distance=0pt]
 				\tikzset{every tree node/.style={align=center,anchor=north}}
-				\Tree [.DP [.D\textsc{[-spec]}\\\textit{the} ] [.nP [.n ] [.root\\\textit{store} ] ] ]  
+				\Tree [.DP [.D\textsc{[\textminus spec]}\\\textit{the} ] [.nP [.n ] [.root\\\textit{store} ] ] ]  
 				\end{tikzpicture}
 			}
 		\end{exe}
@@ -432,7 +432,7 @@ In \REF{ex:williams:49}, the \is{definite noun phrases}definite noun phrase is u
 			\ex[Strong definite \label{ex:williams:52}]{
 				\begin{tikzpicture}[baseline={([yshift=-2ex]current bounding box.north)}, scale=.55][sibling distance=0pt][sibling distance=0pt]
 				\tikzset{every tree node/.style={align=center,anchor=north}}
-				\Tree [.DP [.D\textsc{[+\textsc{ref}]}\\\textit{the} ] [.NumP [.A\textsubscript{high}\\\textit{expensive} ] [.NumP [.Num\textsc{[-PL]} ] [.nP [.A\textsubscript{low}\\\textit{grocery}  ] [.nP [.n ] [.root\\\textit{store} ] ] ] ] ] ]   
+				\Tree [.DP [.D\textsc{[+\textsc{ref}]}\\\textit{the} ] [.NumP [.A\textsubscript{high}\\\textit{expensive} ] [.NumP [.Num\textsc{[\textminus pl]} ] [.nP [.A\textsubscript{low}\\\textit{grocery}  ] [.nP [.n ] [.root\\\textit{store} ] ] ] ] ] ]   
 				\end{tikzpicture}
 			}
 		\end{exe}
@@ -442,7 +442,7 @@ In \REF{ex:williams:49}, the \is{definite noun phrases}definite noun phrase is u
 			\ex[Weak definite \label{ex:williams:53}]{
 				\begin{tikzpicture}[baseline={([yshift=-2ex]current bounding box.north)}, scale=.65][sibling distance=0pt][sibling distance=0pt]
 				\tikzset{every tree node/.style={align=center,anchor=north}}
-				\Tree [.DP  [.D\textsc{[-\textsc{ref}]}\\\textit{the} ] [.nP [.A\textsubscript{low}\\\textit{grocery}  ] [.nP [.n ] [.root\\\textit{store} ] ] ] ] 
+				\Tree [.DP  [.D\textsc{[\textminus\textsc{ref}]}\\\textit{the} ] [.nP [.A\textsubscript{low}\\\textit{grocery}  ] [.nP [.n ] [.root\\\textit{store} ] ] ] ] 
 				\end{tikzpicture}
 			}
 		\end{exe}
@@ -473,7 +473,7 @@ Now that we have determined what sorts of semantic interpretation are required f
 First, I assume that \is{count nouns}countable nouns have atoms in their extensions, thus, I need to take an atomizer function; I take this one:
 
 \begin{exe}
-	\ex \textsc{Atoms}(x) =\big\{$ y| y \leq x$\& $\forall z \leq x [ z \nleq  y ]$ \big\} \citep{Ouwayda2014}
+	\ex $\textsc{Atoms}(x) = \{ y| y \leq x$\& $\forall z \leq x [ z \nleq  y ] \} $ \citep{Ouwayda2014}
 \end{exe}
 
 Starting at the root, we need different types of lexical items to capture the differences in potential interpretations each lexical item can receive. My three classes of roots have the following sets of denotations:
@@ -486,7 +486,7 @@ Starting at the root, we need different types of lexical items to capture the di
 \ex \textsc{strong-weak ambiguous}: e.g. \textit{store, bank, hospital}.
     \begin{xlist}
     \ex Countable noun: [\![\textit{store}\textsubscript{1}]\!]\textsubscript{$\langle n, \langle e,t \rangle \rangle$}  $:= \lambda n.\lambda x. store(x)$ \& $ \left|\textsc{Atoms}(x)\right| = n $ \& $ \forall y \in \textsc{Atoms}(x)[ store(y) ]$
-	\ex Property: [\![\textit{store}\textsubscript{2}\!]\textsubscript{$\langle e,t \rangle$}  $:= \lambda x. store(x)$ 
+	\ex Property: [\![\textit{store}\textsubscript{2}]\!]\textsubscript{$\langle e,t \rangle$}  $:= \lambda x. store(x)$ 
     \end{xlist}
 \ex \textsc{BIS}: e.g. \textit{school, jail, prison, church}.
     \begin{xlist}
@@ -501,8 +501,8 @@ Continuing up the tree, the insertion of Num depends on whether the noun phrase 
 
 \begin{exe}
 	\ex {\label{ex:williams:59}∅ : No lexical item inserted}
-	\ex{\label{ex:williams:60}[\![Num\textsubscript{[+\textsc{pl}]}]\!] $:= \lambda P_{\langle n, \langle e,t \rangle \rangle}. \lambda y. \lambda m_{\langle n \rangle}.[ P(m)(y)$ \& $m > 1$ ] }
-	\ex{\label{ex:williams:61}[\![Num\textsubscript{[-\textsc{pl}]}]\!] $:= \lambda P_{\langle n, \langle e,t \rangle \rangle}. \lambda y.\lambda m_{\langle n \rangle}.[ P(m)(y)$ \& $m =1$ ]}
+	\ex{\label{ex:williams:60}[\![Num\textsubscript{[+\textsc{pl}]}]\!] $:= \lambda P_{\langle n, \langle e,t \rangle \rangle}. \lambda y. \lambda m_{\langle n \rangle}.[ P(m)(y)$ \& $m > 1 ]$ }
+	\ex{\label{ex:williams:61}[\![Num\textsubscript{[\textminus\textsc{pl}]}]\!] $:= \lambda P_{\langle n, \langle e,t \rangle \rangle}. \lambda y.\lambda m_{\langle n \rangle}.[ P(m)(y)$ \& $m =1 ]$}
 \end{exe}
 
 The choice of which option is possible is determined by the meaning of the root. First, if the root is not \is{countable roots}countable, no Num can be inserted; if it were, there would be a type-clash. If the root is countable, a Num is merged,\footnote{For this work, one could say that Num is privative and has the value PL and it would not affect the analysis. In this case, the singular would merely be a Num without any features. In this work, I follow \citet{Harbour2007} and others in assuming a binary specification for Num.} and it could either be a plural or a singular. 
@@ -512,18 +512,18 @@ Finally, a D\textsubscript{[+Def]} can be inserted, depending on the type. There
 \begin{exe}
 	\ex {\label{ex:williams:62}[\![D\textsubscript{[+\textsc{ref}]}]\!] $:=\lambda P_{\langle n, \langle e,t \rangle \rangle}: \exists x. \exists n. \forall y[ $\textsc{max}$(P)(n)(y)\leftrightarrow x=y ].\iota x.\exists n.$\\$ [ \textsc{max}(P)(n)(x) ]$ }
     \ex {\label{ex:williams:63}\textsc{max}(P)(n) := $ \lambda x. P(n)(x) \& \neg \exists y.[ P(n)(y) \& x < y ] $}
-	\ex {\label{ex:williams:64}[\![D\textsubscript{[-\textsc{ref}]}]\!]$ := \lambda P_{\langle e,t\rangle}. \lambda k.^{\cap}P=k $}
+	\ex {\label{ex:williams:64}[\![D\textsubscript{[\textminus\textsc{ref}]}]\!]$ := \lambda P_{\langle e,t\rangle}. \lambda k.^{\cap}P=k $}
 \end{exe}
 
 If we have a \is{semantic root ambiguity}\textsc{strong-weak ambiguous} lexical item, \REF{ex:williams:64} will be inserted after the little n head, but if we have a BIS lexical item, \REF{ex:williams:64} cannot be inserted or else there would be a type clash. 
 
 Next, we merge the \is{prepositions}preposition. I take prepositions that can facilitate weak readings  to be ambiguous between normal (e.g. \textit{to}\textsubscript{2}) and \is{incorporation}incorporating variants (e.g. \textit{to}\textsubscript{2}),\footnote{I use the lower types for simplicity, but, if you prefer a continuations-style denotation, the \is{prepositions}preposition could have an additional argument for the main event predicate. This has no consequences for my account of weakness.
-\ea \textnormal{[\![\textit{to}\textsubscript{1\textsubscript{high-type}}]\!]\textsubscript{$\langle \langle v,t \rangle,\langle e,\langle v,t\rangle \rangle \rangle$} $:= \lambda P_{<v,t>} \lambda x. \lambda e.P(e) $\& \textsc{Goal}(e)$=x $}
+\ea \textnormal{[\![\textit{to}\textsubscript{1\textsubscript{high-type}}]\!]\textsubscript{$\langle \langle v,t \rangle,\langle e,\langle v,t\rangle \rangle \rangle$} $:= \lambda P_{<v,t>} \lambda x. \lambda e.P(e) \& \textsc{Goal}(e)=x $}
 \z\vspace*{-\baselineskip}} since the weak interpretation can only occur when the definite is in certain syntactic configurations (e.g. when it is the complement of \textit{to}). I also assume, following \citet{Aguilar-Guevara2014}, among others, that weak definites do not make explicit \isi{reference} to individual atoms, and take \citegen{Chierchia1998} \is{type shifting}type-shifters, \textsc{down} and \textsc{up}; \textsc{down} takes one from a property to a \is{kinds}kind, while \textsc{up} takes one from a kind to a property. 
 
 \begin{exe} 
-\ex {\label{ex:williams:65}[\![\textit{to}\textsubscript{1}]\!]\textsubscript{$\langle e, \langle v,t \rangle \rangle$} $:= \lambda x. \lambda e. $\textsc{Goal}(e)$=x $ }
-\ex {\label{ex:williams:66}[\![\textit{to}\textsubscript{2}]\!]\textsubscript{$\langle\langle k,t \rangle ,\langle e,\langle v,t\rangle \rangle \rangle$} $:= \lambda P_{\langle k,t \rangle}. \lambda e. \exists x. \exists k.[ P(k) \& ^{\cup}k(x)$\& \textsc{Goal}(e)$=x ]$ }
+\ex {\label{ex:williams:65}[\![\textit{to}\textsubscript{1}]\!]\textsubscript{$\langle e, \langle v,t \rangle \rangle$} $:= \lambda x. \lambda e. \textsc{Goal}(e)=x $ }
+\ex {\label{ex:williams:66}[\![\textit{to}\textsubscript{2}]\!]\textsubscript{$\langle\langle k,t \rangle ,\langle e,\langle v,t\rangle \rangle \rangle$} $:= \lambda P_{\langle k,t \rangle}. \lambda e. \exists x. \exists k.[ P(k) \& ^{\cup}k(x)\& \textsc{Goal}(e)=x ]$ }
 \end{exe}
 
 The denotation for \textit{to}\textsubscript{1} is the classical one for directional prepositions from event semantics (see \citealt[57]{Champollion2017}, for one formulation). The denotation for \textit{to}\textsubscript{1} is more \is{uniqueness}unique, since it is an \is{incorporation}incorporating adposition.\footnote{Another potential way to avoid this ambiguity would be to use an explicit incorporating element that constructs \textit{to}\textsubscript{2} from \textit{to}\textsubscript{1}.} It takes a \is{kind properties}kind property and tells you that there is a kind that satisfies the property and that one of its instantiations is the \textsc{goal} of an event.
@@ -532,26 +532,26 @@ The structure of a \is{strong definites}strong definite such as  \REF{ex:william
 
 \begin{exe}
 	\ex[\label{ex:williams:67}]{
-		\begin{tikzpicture}[baseline={([yshift=-2ex]current bounding box.north)}, scale=.75][sibling distance=0pt]
+		\begin{tikzpicture}[baseline={([yshift=-2ex]current bounding box.north)}, scale=.8][sibling distance=0pt]
 		\tikzset{every tree node/.style={align=center,anchor=north}},
-		\Tree [.PP\textsubscript{$\langle v,t\rangle$} [.P\\\textit{to}\textsubscript{1}\\{$\langle e,\langle v,t\rangle\rangle$}  ] [.DP\textsubscript{$\langle e\rangle$} [.D\textsubscript{\textsc{[+Ref]}}\\\textit{the}\\{$\langle \langle n,\langle e,t\rangle \rangle ,e \rangle$}  ]  [.{NumP}\textsubscript{$\langle n,\langle e,t\rangle \rangle$} [.\textbf{Num}\\{[\textsc{-PL}]}\\{$\langle \langle n,\langle e,t\rangle \rangle,\langle n,\langle e,t\rangle \rangle \rangle$}  ] [.nP\textsubscript{$\langle n,\langle e,t\rangle \rangle$} [.n\textsubscript{1}\\{$\langle \langle n,\langle e,t\rangle ,\langle n,\langle e,t\rangle \rangle \rangle$}  ] [.root\\{\textit{castle}/\textit{store}\textsubscript{1}/\textit{school}\textsubscript{1}}\\{$\langle n,\langle e,t\rangle \rangle $} ] ] ] ] ] 
+		\Tree [.PP\textsubscript{$\langle v,t\rangle$} [.P\\\textit{to}\textsubscript{1}\\{$\langle e,\langle v,t\rangle\rangle$}  ] [.DP\textsubscript{$\langle e\rangle$} [.D\textsubscript{\textsc{[+Ref]}}\\\textit{the}\\{$\langle \langle n,\langle e,t\rangle \rangle ,e \rangle$}  ]  [.{NumP}\textsubscript{$\langle n,\langle e,t\rangle \rangle$} [.\textbf{Num}\\{[\textsc{\textminus pl}]}\\{$\langle \langle n,\langle e,t\rangle \rangle,\langle n,\langle e,t\rangle \rangle \rangle$}  ] [.nP\textsubscript{$\langle n,\langle e,t\rangle \rangle$} [.n\textsubscript{1}\\{$\langle \langle n,\langle e,t\rangle ,\langle n,\langle e,t\rangle \rangle \rangle$}  ] [.root\\{\textit{castle}/\textit{store}\textsubscript{1}/\textit{school}\textsubscript{1}}\\{$\langle n,\langle e,t\rangle \rangle $} ] ] ] ] ] 
 		\end{tikzpicture}
 	}
 \end{exe}
 We combine the categorizing head with the \is{countable roots}countable root, which passes up the interpretation of the root. Next, we add in the \isi{number} specification, which restricts the extension of the \is{nouns}noun to singletons. Finally, the type requires that we add the updated Sharvy definite (as in \ref{ex:williams:62}, and then the regular directional \is{prepositions}preposition, as in \ref{ex:williams:65}), resulting in the following derivation:
 \begin{exe}
 	\ex {[\![n\textsubscript{1} \textit{castle}]\!]\\  
-	$= \lambda n.\lambda y. castle(y) \&  \left|\textsc{Atoms}(y)\right| = n  \&  \forall z \in \textsc{Atoms}(y)[ castle(z) ]$}
-	\ex {\small{[\![Num\textsc{\textsubscript{[-\textsc{pl}]}} n\textsubscript{1} \textit{castle}]\!] \\ 
-	$= \lambda m.\lambda y. castle(y) \&  \left|\textsc{Atoms}(y)\right| = m  \&  \forall z \in \textsc{Atoms}(y)[ castle(z) ] \& m =1 $}}
-	\ex {[\![D\textsubscript{[+\textsc{spec}]} Num\textsc{\textsubscript{[-\textsc{pl}]}} n\textsubscript{1} \textit{castle}] ] \\
-	$= \iota x.\exists m.[ (castle(x)\&  \left|\textsc{Atoms}(x)\right| = m  \&  \forall z \in \textsc{Atoms}(x)[ castle(z) ]  \\ 
-    \& m =1) \& \neg \exists y.[ castle(y) \& \left|\textsc{Atoms}(y)\right| = m \& \forall x' \in \textsc{Atoms}(y)[ castle(y) ] \\ 
+	$= \lambda n.\lambda y. \textit{castle}\mkern\thinmuskip(y) \&  \left|\textsc{Atoms}(y)\right| = n  \&  \forall z \in \textsc{Atoms}(y)[ \textit{castle}\mkern\thinmuskip(z) ]$}
+	\ex {\small{[\![Num\textsc{\textsubscript{[\textminus\textsc{pl}]}} n\textsubscript{1} \textit{castle}]\!] \\ 
+	$= \lambda m.\lambda y. \textit{castle}\mkern\thinmuskip(y) \&  \left|\textsc{Atoms}(y)\right| = m  \&  \forall z \in \textsc{Atoms}(y)[ \textit{castle}\mkern\thinmuskip(z) ] \& m =1 $}}
+	\ex {[\![D\textsubscript{[+\textsc{spec}]} Num\textsc{\textsubscript{[\textminus\textsc{pl}]}} n\textsubscript{1} \textit{castle}] ] \\
+	$= \iota x.\exists m.[ (\textit{castle}\mkern\thinmuskip(x)\&  \left|\textsc{Atoms}(x)\right| = m  \&  \forall z \in \textsc{Atoms}(x)[ \textit{castle}\mkern\thinmuskip(z) ]  \\ 
+    \& m =1) \& \neg \exists y.[ \textit{castle}\mkern\thinmuskip(y) \& \left|\textsc{Atoms}(y)\right| = m \& \forall x' \in \textsc{Atoms}(y)[ \textit{castle}\mkern\thinmuskip(y) ] \\ 
     \& m=1 \& x < y $ ] }
-	\ex {\label{ex:williams:71} \small{[\![to\textsubscript{1} D\textsubscript{[+\textsc{spec}]} Num\textsc{\textsubscript{[-\textsc{pl}]}} n\textsubscript{1} \textit{castle}]\!]\\ 
-	$= \lambda e.$\textsc{Goal}(e)$=\iota x.\exists m.[ (castle(x)\&  \left|\textsc{Atoms}(x)\right| = m \&  
-    \forall z \in \textsc{Atoms}(x)[ castle(z) ] \\ 
-    \& m =1 ) \& \neg \exists y.[ castle(y) \& \left|\textsc{Atoms}(y)\right| = m \& \forall x' \in \textsc{Atoms}(y)[ castle(y) ] \\
+	\ex {\label{ex:williams:71} \small{[\![to\textsubscript{1} D\textsubscript{[+\textsc{spec}]} Num\textsc{\textsubscript{[\textminus\textsc{pl}]}} n\textsubscript{1} \textit{castle}]\!]\\ 
+	$= \lambda e.\textsc{Goal}(e)=\iota x.\exists m.[ (\textit{castle}\mkern\thinmuskip(x)\&  \left|\textsc{Atoms}(x)\right| = m \&  
+    \forall z \in \textsc{Atoms}(x)[ \textit{castle}\mkern\thinmuskip(z) ] \\ 
+    \& m =1 ) \& \neg \exists y.[ \textit{castle}\mkern\thinmuskip(y) \& \left|\textsc{Atoms}(y)\right| = m \& \forall x' \in \textsc{Atoms}(y)[ \textit{castle}\mkern\thinmuskip(y) ] \\
     \&  m=1 \& x < y $ ] }}
 \end{exe}
 
@@ -563,15 +563,15 @@ Compared to a \is{strong definites}strong definite, a weak definite, such as in 
 	\ex[]{\label{ex:williams:72}
 				\begin{tikzpicture}[baseline={([yshift=-2ex]current bounding box.north)}, scale=.85][sibling distance=0pt]
 				\tikzset{every tree node/.style={align=center,anchor=north}}
-				\Tree [.PP\textsubscript{$\langle v,t \rangle$} [.P\\to\textsubscript{2}\\{$\langle \langle k,t\rangle ,\langle v,t\rangle \rangle $}  ] [.DP\textsubscript{$\langle k,t\rangle$} [.D\textsc{[-Ref]}\\\textit{the}\\{$\langle \langle e,t\rangle ,\langle k,t\rangle \rangle$} ]  [.nP\textsubscript{$\langle e,t\rangle $} [.n\textsubscript{2}\\{$\langle \langle e,t\rangle ,\langle e,t\rangle \rangle $} ] [.root\\\textit{store}\textsubscript{2}\\{$\langle e,t\rangle $} ] ] ] ] 
+				\Tree [.PP\textsubscript{$\langle v,t \rangle$} [.P\\to\textsubscript{2}\\{$\langle \langle k,t\rangle ,\langle v,t\rangle \rangle $}  ] [.DP\textsubscript{$\langle k,t\rangle$} [.D\textsc{[\textminus ref]}\\\textit{the}\\{$\langle \langle e,t\rangle ,\langle k,t\rangle \rangle$} ]  [.nP\textsubscript{$\langle e,t\rangle $} [.n\textsubscript{2}\\{$\langle \langle e,t\rangle ,\langle e,t\rangle \rangle $} ] [.root\\\textit{store}\textsubscript{2}\\{$\langle e,t\rangle $} ] ] ] ] 
 				\end{tikzpicture}
 			}
 	\ex {[\![n\textsubscript{2} \textit{store}\textsubscript{2}]\!] \\ 
-	$= \lambda x. store(x) $}
-	\ex {[\![D\textsubscript{[-\textsc{spec}]} n\textsubscript{2} \textit{store}\textsubscript{2}]\!] \\ 
-	$= \lambda k.^{\cap}store=k$}
-	\ex {[\![\textit{to}\textsubscript{2} D\textsubscript{[-\textsc{spec}]} n\textsubscript{2} \textit{store}\textsubscript{2}]\!] \\
-	$= \lambda e. \exists y. \exists k. [^{\cap}store=k\& ^{\cup}k(y) $\textsc{Goal}(e)$=y]$}
+	$= \lambda x. \textit{store}\mkern\thinmuskip(x) $}
+	\ex {[\![D\textsubscript{[\textminus\textsc{spec}]} n\textsubscript{2} \textit{store}\textsubscript{2}]\!] \\ 
+	$= \lambda k.^{\cap}\textit{store}=k$}
+	\ex {[\![\textit{to}\textsubscript{2} D\textsubscript{[\textminus\textsc{spec}]} n\textsubscript{2} \textit{store}\textsubscript{2}]\!] \\
+	$= \lambda e. \exists y. \exists k. [^{\cap}\textit{store}=k\& ^{\cup}k(y) \textsc{Goal}(e)=y]$}
 \end{exe}
 
 Finally, we take the BIS, as in \REF{ex:williams:4}. Roots that can be bare have the denotation of a \is{kind properties}kind-property (see \ref{ex:williams:58}). This root merges with a categorizing head, which passes up the type and denotation of the root, and then with the \is{incorporation}incorporating \is{prepositions}preposition.
@@ -584,9 +584,9 @@ Finally, we take the BIS, as in \REF{ex:williams:4}. Roots that can be bare have
 				\end{tikzpicture}
 			}
 	\ex {[\![n\textsubscript{3} \textit{store}\textsubscript{2}]\!] \\ 
-$= \lambda k. school(k) $}
-	\ex {[\![\textit{to}\textsubscript{2} D\textsubscript{[-\textsc{spec}]} n\textsubscript{2} \textit{school}\textsubscript{2}]\!] \\
-	$= \lambda e. \exists y. \exists k.[school(k)\& ^{\cup}k(y) \& $\textsc{Goal}(e)$=y]$}
+$= \lambda k. \textit{school}\mkern\thinmuskip(k) $}
+	\ex {[\![\textit{to}\textsubscript{2} D\textsubscript{[\textminus\textsc{spec}]} n\textsubscript{2} \textit{school}\textsubscript{2}]\!] \\
+	$= \lambda e. \exists y. \exists k.[\textit{school}\mkern\thinmuskip(k)\& ^{\cup}k(y) \& \textsc{Goal}(e)=y]$}
 \end{exe}
 
 The derivation for the BIS reflects their similarity with weak definites. More specifically, both derivations lack a {Num} projection, and combine with the incorporating adposition. 
@@ -598,17 +598,18 @@ I have argued that weak definites and \isi{bare singulars} mean similar things (
 Interpretive differences between strong and weak nominals correspond to differences at two syntactic positions: first, at the root-level, semantic type ambiguity determines which interpretation(s) is/are possible, and second, at the determiner-level, the semantic type of the root conditions which of two versions of the definite determiner will be chosen. Using these two ingredients, this account explains why weak definites and \isi{bare singulars} receive \is{number neutrality}number neutral interpretations, while simultaneously explaining their lexical idio\-syncrasies.\is{weak definites|)}\is{morphosemantics|)}
 
 \section*{Acknowledgements}
-Special thanks to Ruth Kramer and the students in her Seminar on the Syntax of Number (NYU, Spring 2015); to Curt Anderson, David Beaver, Hagen Blix, Dylan Bumford, Lucas Champollion, Simon Charlow,  Chris Collins, Masha Esipova, Paloma Jereti{\v c}, Maria Kouneli, Marcin Morzycki, Alan Munn, Neil Myler, Rob Pasternak, Sarah Phillips, and Anna Szabolcsi for advice, skepticism, criticism, proofreading, and/or encouragement; to the members of Rutgers' SURGE and New York University's MorphBeer; the audiences, organizers, and reviewers for Definiteness across Languages; and finally, to attendees of SYNC 2013 and SWAMP 2012 for comments on much earlier versions of this work. \is{bare institutional singulars|)}
+Special thanks to Ruth Kramer and the students in her Seminar on the Syntax of Number (NYU, Spring 2015); to Curt Anderson, David Beaver, Hagen Blix, Dy\-lan Bumford, Lucas Champollion, Simon Charlow,  Chris Collins, Masha Esipova, Paloma Jereti{\v c}, Maria Kouneli, Marcin Morzycki, Alan Munn, Neil Myler, Rob Pasternak, Sarah Phillips, and Anna Szabolcsi for advice, skepticism, criticism, proofreading, and/or encouragement; to the members of Rutgers' SURGE and New York University's MorphBeer; the audiences, organizers, and reviewers for Definiteness across Languages; and finally, to attendees of SYNC 2013 and SWAMP 2012 for comments on much earlier versions of this work. \is{bare institutional singulars|)}
 
 \section*{Abbreviations}
-\begin{tabular}{ll}
-	\textsc{bis} & Bare institutional singular \\
-	\textsc{num} & Number \\
-	\textsc{pl} & Plural \\
-	\textsc{ref} & Referential \\
-\end{tabular}
+\begin{multicols}{2}
+\begin{tabbing}
+    \textsc{num}\hspace{.5em}\= Bare institutional singular\kill
+	\textsc{bis} \> Bare institutional singular \\
+	\textsc{num} \> Number \\
+	\textsc{pl} \> Plural \\
+	\textsc{ref} \> Referential
+\end{tabbing}
+\end{multicols}
 
-{\sloppy
-\printbibliography[heading=subbibliography,notkeyword=this]
-}
+{\sloppy\printbibliography[heading=subbibliography,notkeyword=this]}
 \end{document}
