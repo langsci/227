@@ -2,6 +2,11 @@
 		"title": "Definiteness across languages",
 		"authors": [{"name": "Ana Aguilar-Guevara"},{"name":" Julia Pozas Loyo"},{"name":" Violeta Vázquez-Rojas Maldonado"}],
 	"license": "CC-BY-4.0", 
-	"publishedAt": "2018-11-14T10:23:05.000Z"}
+	"publishedAt": "2018-11-14T10:23:05.000Z"},
+	{"versiontype": "first_edition",
+		"title": "Definiteness across languages",
+		"authors": [{"name": "Ana Aguilar-Guevara"},{"name":" Julia Pozas Loyo"},{"name":" Violeta Vázquez-Rojas Maldonado"}],
+	"license": "CC-BY-4.0", 
+	"publishedAt": "2019-08-12T10:23:05.000Z"}
 	]
 }
